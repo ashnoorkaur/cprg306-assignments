@@ -8,7 +8,9 @@ export default function Home() {
       <h1 className="text-center mx-auto text-4xl mt-15">CPRG 306: Web Development 2 - Assignments</h1>
       <p><Link href="./week-2" className={linkStyles}>Link to the week-2 page</Link></p>
       <p><Link href="./week-3" className={linkStyles}>Link to the week-3 page</Link></p>
-
+      <p><Link href="./week-4" className={linkStyles}>Link to the week-4 page</Link></p>
+      <p><Link href="./week-5" className={linkStyles}>Link to the week-5 page</Link></p>
+      <p><Link href="./week-6" className={linkStyles}>Link to the week-6 page</Link></p>
     </main>
   );
 }
