@@ -16,7 +16,6 @@ export default function Page() {
 
   function cleanItemName(name) {
     let cleanName = name.split(",")[0].trim();
-
     cleanName = cleanName.replace(
       /([\u2700-\u27BF]|[\uE000-\uF8FF]|[\uD83C-\uDBFF\uDC00-\uDFFF])/g,
       ""
@@ -27,6 +26,7 @@ export default function Page() {
 
   const handleItemSelect = (item) => {
     const cleanedName = cleanItemName(item.name);
+    console.log("Selected ingredient for API:", cleanedName);
     setSelectedItemName(cleanedName);
   };
 
