@@ -18,7 +18,7 @@ export const getItems = async (userId) => {
     return items;
   } catch (error) {
     console.error("Error in getItems: ", error);
-    throw new Error("Could not fetch items."); // Or handle it as you see fit
+    throw new Error("Could not fetch items.");
   }
 };
 
@@ -31,6 +31,6 @@ export const addItem = async (userId, item) => {
     return docRef.id;
   } catch (error) {
     console.error("Error in addItem: ", error);
-    throw new Error("Could not add item."); // Or handle it as you see fit
+    throw new Error("Could not add item."); 
   }
 };
